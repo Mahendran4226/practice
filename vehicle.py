@@ -1,16 +1,26 @@
-class Vehicle:
-    def __init__(self, make, model, year, weight):
-        self.make = make
-        self.model = model
-        self.year = year
-        self.weight = weight
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-    def get_make(self):
+    def display(self):
+        print(f"Name: {self.name}, Age: {self.age}")
 
-        return self.make
+    def get_age(self):
+        return self.age
     
-    def get_model(self):
+    def get_name(self):
+        return self.name
+    def set_age(self, age):
+        self.age = age
+    def set_name(self, name):
+        self.name = name
 
-        return self.model
-    
+Student1 = Student("John", 22)
+Student1.display()
+print(Student1.get_age())
+print(Student1.get_name())
+Student1.set_age(25)
+Student1.set_name("Smith")  
+
     
