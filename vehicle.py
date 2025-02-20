@@ -9,3 +9,8 @@ class Vehicle:
 
         return self.make
     
+    def get_model(self):
+
+        return self.model
+    
+    
